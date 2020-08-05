@@ -12,12 +12,32 @@
       <!--Styling CSS-->
         <!-- <link rel="stylesheet" href="style/style.css"> -->
 
+        <style>
+            #jumbo {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            small {
+                font-size: xx-small;
+            }
+
+            #footer_border {
+                position: absolute; 
+                left: 0; 
+                right: 0; 
+                width: 100%; 
+                border-bottom: .5px solid; 
+                border-color: darkgray;
+            }
+        </style>
         
 
         <title>B.Harden's Portfolio</title>
     </head>
 
     <body>
+
     <!-- Navigation -->
         <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #000033;"> <!--htmlcolorcodes.com/color-chart/  (#000033)-->
             <div class="container-fluid">
@@ -50,15 +70,7 @@
         </nav>
 
     <!-- Content-->
-        <!-- <div class="card border-light">
-            <div class="card-body">
-            <h5 class="card-title">Welcome to The Site.</h5>
-            <p class="card-text">Thank you so much for visiting my website and portfolio.</p>
-            <a href="experience.html" class="btn btn-info">Experience</a>
-            </div>
-        </div> -->
-
-        <div class="jumbotron">
+        <div class="jumbotron" id="jumbo">
             <h1 class="display-4">Welcome!</h1>
             <p class="lead">Hey, Brandon Harden here! Thank you so much for visiting my website and portfolio.
                 Here, you will get to learn a little bit about my background, career experience, and hobbies.
@@ -105,13 +117,34 @@
 
                 </section>
             </main>
-        </div>
 
-        <footer class="py-6 bg-light text-black-50">
-            <div class="container text-center">
-                <small>Copyright &copy; 2020</small>
+            <!-- Footer -->
+            <footer>
+                <hr class="my-2">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-sm text-left">
+                                <thead>
+                                    <tr>
+                                    <th class="font-weight-normal" scope="col" style="font-size: small; padding-left: 60px; padding-bottom: 0px; border: none;">Contact</th>
+                                    <th class="font-weight-normal" scope="col" style="font-size: small; padding-left: 9px; padding-bottom: 0px; border: none;">Social</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td class="font-weight-light" style="font-size: smaller; border: none;">Email: b.harden92@gmail.com</td>
+                                    <td style="border: none; font-size: smaller;"><a href="https://www.linkedin.com/in/brandon-harden-social">linkedin</a></td>
+                                </tbody>    
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div id="footer_border"></div> -->
+                    <small class="text-muted">Copyright &copy; 2020 b-harden.github.io/Portfolio-Website/</small>
                 </div>
-        </footer>
+            </footer>
+
+        </div>
 
     <!-- Scripts for JavaScript functionality--> <!-- jQuery must come first, then Popper.js, and then BootStrap's JavaScript plugins-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

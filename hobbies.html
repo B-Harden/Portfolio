@@ -10,7 +10,27 @@
         
 
       <!--Styling CSS-->
-        <link rel="stylesheet" href="style/style.css">
+        <!-- <link rel="stylesheet" href="style/style.css"> -->
+
+        <style>
+            #jumbo {
+                padding-bottom: 125px;
+                margin-bottom: 0px;
+            }
+
+            small {
+                font-size: xx-small;
+            }
+
+            #footer_border {
+                position: absolute; 
+                left: 0; 
+                right: 0; 
+                width: 100%; 
+                border-bottom: .5px solid; 
+                border-color: darkgray;
+            }
+        </style>
 
         <title>B.Harden's Portfolio</title>
     </head>
@@ -56,7 +76,7 @@
             </div>
         </div> -->
 
-        <div class="jumbotron">
+        <div class="jumbotron" id="jumbo">
             <h1 class="display-4">Hobbies</h1>
             <hr class="my-4">
 
@@ -72,6 +92,33 @@
             </div>
                 </section>
             </main>
+
+            <!-- Footer -->
+            <footer>
+                <hr class="my-2">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-sm text-left">
+                                <thead>
+                                    <tr>
+                                    <th class="font-weight-normal" scope="col" style="font-size: small; padding-left: 60px; padding-bottom: 0px; border: none;">Contact</th>
+                                    <th class="font-weight-normal" scope="col" style="font-size: small; padding-left: 9px; padding-bottom: 0px; border: none;">Social</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td class="font-weight-light" style="font-size: smaller; border: none;">Email: b.harden92@gmail.com</td>
+                                    <td style="border: none; font-size: smaller;"><a href="https://www.linkedin.com/in/brandon-harden-social">linkedin</a></td>
+                                </tbody>    
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div id="footer_border"></div> -->
+                    <small class="text-muted">Copyright &copy; 2020 b-harden.github.io/Portfolio-Website/</small>
+                </div>
+            </footer>
+
         </div>
 
     <!-- Scripts for JavaScript functionality--> <!-- jQuery must come first, then Popper.js, and then BootStrap's JavaScript plugins-->
