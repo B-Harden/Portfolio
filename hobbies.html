@@ -14,24 +14,28 @@
 
         <style>
 
+            #hon {
+                width: 75%; margin: auto;
+            }
+            #skate {
+                width: 50%; margin: auto;
+            }
+
             @media (max-width: 768px) {
-                /* #hon1 {
-                    font-size: small;
-                } */
+                #hon {
+                    width: 100%;
+                }
+                #skate {
+                    width: 80%;
+                }
                 #hon2 {
                     font-size: small;
                 }
-                /* #skate1 {
-                    font-size: small;
-                } */
                 #skate2 {
                     font-size: small;
                 }
                 #skate3 {
                     font-size: small;
-                }
-                #skate {
-                    width: 42rem;
                 }
             }
 
@@ -99,7 +103,7 @@
                 <section>
 
                     <!-- Community Service -->
-                    <div class="card" style="width: 75%; margin: auto">
+                    <div id="hon" class="card">
                         <img class="card-img-top" src="img/HON_Day.jpg" alt="Card image cap">
                         <div class="card-body">
                           <h5 id="hon1" class="card-title">Community Service</h5>
@@ -116,7 +120,8 @@
                     <br>
                     <br>
 
-                    <div id="skate" class="card" style="width: 50%; margin: auto;">
+                    <!-- Skate -->
+                    <div id="skate" class="card">
                         <img class="card-img-top" src="img/skate.jpg" alt="Card image cap">
                         <div class="card-body">
                           <h5 id="skate1" class="card-title">Rollerblading</h5>
