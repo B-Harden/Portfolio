@@ -13,8 +13,23 @@
         <!-- <link rel="stylesheet" href="style/style.css"> -->
 
         <style>
+            iframe {
+                width: 70%;
+                height: 500px;
+                padding-left: 200px;
+                /* pointer-events: none; */
+            }
+
+            @media (max-width: 768px) {
+                iframe {
+                    width: 100%;
+                    padding-left: 0;
+                    /* height: 50%; */
+                }
+            }
+
             #jumbo {
-                padding-bottom: 125px;
+                padding-bottom: 0px;
                 margin-bottom: 0px;
             }
 
@@ -30,7 +45,7 @@
                 border-bottom: .5px solid; 
                 border-color: darkgray;
             }
-            
+
             img {
                 pointer-events: none;
             }
@@ -79,13 +94,27 @@
             <main role="main">
                 <section>
                     <div class="card-body">
-                <h5 class="card-title">Coming in the near future! (no pun intended)</h5>
-                <p class="lead">Find out more at 
-                    <a href="https://github.com/B-Harden/Portfolio">https://github.com/B-Harden/Portfolio</a>
-                </p>
-                <!-- <p class="card-text">Dare to take a look into...The Future.
-                </p> -->
-            </div>
+                        <h5 class="card-title">Coming in the near future! (no pun intended)</h5>
+                        <p class="lead">Find out more at 
+                            <a href="https://github.com/B-Harden/Portfolio">https://github.com/B-Harden/Portfolio</a>
+                        </p>
+
+                        
+                    </div>
+                    <!-- <div id="iframe">
+                        <iframe src="img\VR Training for HRI(2018).pdf#toolbar=0" frameborder="0"></iframe>
+                    </div> -->
+
+                    <div id="skate" class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Research</h5>
+                          <p id="text" class="card-text">
+                              Acquire a better understanding of Humans by building Human-like robots.
+                          </p>
+                          <iframe src="img\VR Training for HRI(2018).pdf#toolbar=0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
                 </section>
             </main>
 
