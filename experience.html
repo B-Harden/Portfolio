@@ -13,6 +13,18 @@
         <!-- <link rel="stylesheet" href="style/style.css"> -->
 
         <style>
+            @media (max-width: 768px) {
+                #info::after {
+                    content: "*Scroll side-to-side within each table to view full content.*";
+                }
+                #info {
+                    padding-left: 30px;
+                }
+                td, li {
+                font-size: small;
+                }
+            } 
+
             li {
                 text-align: left;
             }
@@ -34,7 +46,7 @@
                 border-bottom: .5px solid; 
                 border-color: darkgray;
             }
-            
+
             img {
                 pointer-events: none;
             }
@@ -83,16 +95,9 @@
             </p>
             <hr class="my-4">
 
-            <!-- <main class="container-fluid" role="main">
-                <section>
-                    <div class="card-body">
-                        <h5 class="card-title">Education</h5>
-                        <p class="card-text">On the Experience page is where you will find my previous to current work experience
-                        as well as education and certifications.
-                        </p>
-                    </div>
-                </section>
-            </main> -->
+            <!-- Display info on mobile devices telling user to scroll to view content-->
+            <div id="info" class="font-italic"></div>
+            <br>
 
             <main class="container-fluid" role="main">
                 <section>
