@@ -13,11 +13,10 @@
         <!-- <link rel="stylesheet" href="style/style.css"> -->
 
         <style>
-            #Microsoft, #IBM {
-                width: 50%; margin: auto;
-            }
-
             @media (max-width: 768px) {
+                #Microsoft, #IBM {
+                width: 75%; margin: auto;
+                }
                 #info::after {
                     content: "*Scroll side-to-side within each table to view full content.*";
                 }
@@ -27,6 +26,11 @@
                 td, li {
                 font-size: small;
                 }
+            }
+
+            @media (orientation:portrait) {
+                #Microsoft, #IBM, .hide-on-portrait {
+                display: none;
             } 
 
             li {
@@ -470,7 +474,8 @@
                                     <tr class="table-secondary">
                                         <td><a href="https://github.com/B-Harden/Portfolio-src/blob/master/Course%20Certificates/ITFundamentalsForCyberSecurity(Z83JWDGWT8H8).pdf">
                                             Cybersecurity IT Fundamentals Specialization</a>
-                                            <img id="IBM" src="img\CybersecurityITFundamentalsSpecialization(IBM).png" height="250">
+                                            <br>
+                                            <img id="IBM" src="img\CybersecurityITFundamentalsSpecialization(IBM).png" height="300">
                                         </td>
                                         <td>Z83JWDGWT8H8</td>
                                         <td>IBM on Coursera</td>
